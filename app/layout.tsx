@@ -25,6 +25,8 @@ export default function RootLayout({
         <body>
           <PageHeader />
           {children}
+          <my-widget project-id={15}></my-widget>
+          <script src="https://loopin-widget.vercel.app//widget.umd.js"></script>
         </body>
       </html>
     </ClerkProvider>
