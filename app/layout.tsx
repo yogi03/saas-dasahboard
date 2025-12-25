@@ -1,4 +1,5 @@
 
+import React from 'react';
 import {
   ClerkProvider,
   SignInButton,
@@ -25,7 +26,7 @@ export default function RootLayout({
         <body>
           <PageHeader />
           {children}
-          <my-widget project-id={15}></my-widget>
+          {React.createElement('my-widget' as any, { 'project-id': 15 })}
           <script src="https://loopin-widget.vercel.app//widget.umd.js"></script>
         </body>
       </html>
