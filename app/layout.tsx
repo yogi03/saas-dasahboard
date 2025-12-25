@@ -8,6 +8,11 @@ import {
 } from '@clerk/nextjs'
 import './globals.css'
 import PageHeader from '@/components/page-header';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'loopin',
+};
 
 export default function RootLayout({
   children,
